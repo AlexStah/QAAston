@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        // Ввод двух целых чисел
+        System.out.println("Введите 1-е целое число (a):");
+        int a = scanner.nextInt();
+        System.out.println("Введите 2-е целое число (b):");
+        int b = scanner.nextInt();
+	// Сравниваем
+        if (a > b) {
+            System.out.println("a > b");
+        } else if (a < b) {
+            System.out.println("a < b");
+        } else {
+            System.out.println("a = b");
+        }
+        // Выполнение операций
+        System.out.println("Сложение: " + (a + b));
+        System.out.println("Вычитание: " + (a - b));
+        // Проверка деления на ноль
+        if (b != 0) {
+            System.out.println("Деление: " + ((double) a / b));
+        } else {
+            System.out.println("Деление на ноль невозможно");
+        }
+        System.out.println("Умножение: " + (a * b));
+    }
+}
